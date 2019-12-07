@@ -32,6 +32,6 @@ stages:
     - task: KubernetesManifest@0
       inputs:
         action: 'deploy'
-        kubernetesServiceConnection: 'Kluster'
+        kubernetesServiceConnection: 'kuberConnection'
         namespace: 'default'
         manifests: 'kubernetes/deployment.yaml'
